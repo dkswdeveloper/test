@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<employee>
+		<empid>123</empid>
+		<name>Atul</name>
+		<department>
+			<depid>1</depid>
+			<name>HR</name>
+		</department>
+		<employee>
+			<empid>124</empid>
+			<name>Prnajali</name>
+			<department>
+				<depid>1</depid>
+				<name>HR</name>
+			</department>
+		</employee>
+</employees>

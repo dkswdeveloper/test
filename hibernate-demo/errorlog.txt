@@ -1,0 +1,9 @@
+2024-10-17 12:34:46,566[yyyy-mm-dd HH-MM-SS] ERROR in catch , with full details of input and other 
+ 2024-10-17 12:34:46,567[yyyy-mm-dd HH-MM-SS] FATAL fatal error
+ 2024-10-17 12:35:22,923[yyyy-mm-dd HH-MM-SS] ERROR in catch , with full details of input and other 
+ 2024-10-17 12:35:22,923[yyyy-mm-dd HH-MM-SS] FATAL fatal error
+ 2024-10-17 12:44:18,344[yyyy-mm-dd HH-MM-SS] ERROR in catch , with full details of input and other 
+ 2024-10-17 12:44:18,344[yyyy-mm-dd HH-MM-SS] FATAL fatal error
+ 2024-10-17 14:02:45,230[yyyy-mm-dd HH-MM-SS] ERROR in catch , with full details of input and other 
+ 2024-10-17 14:02:45,230[yyyy-mm-dd HH-MM-SS] FATAL fatal error
+ 
