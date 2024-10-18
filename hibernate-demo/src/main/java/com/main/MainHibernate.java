@@ -3,19 +3,15 @@ package com.main;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import org.apache.log4j.Logger;
 
 import com.fil.dao.EmfProvider;
-import com.main.model.Department;
-import com.main.model.Employee;
-import com.main.model.MyTest;
-import com.main.model.Parking;
-import com.main.model.Project;
-import com.main.model.Student;
 
 public class MainHibernate
 {
+	private static Logger logger = Logger.getLogger("com.main");
 	public static void main(String[] args)
 	{
 		System.out.println("project is running");
@@ -56,10 +52,27 @@ public class MainHibernate
 //		employees.add(emp1);
 //		employees.add(emp2);
 //		em.persist(project);
-		Employee emp1 = em.find(Employee.class,1);
-		emp1.setName("Dhruv Sharma");
+//		Employee emp1 = em.find(Employee.class,1);
+//		emp1.setName("Dhruv Sharma");
+//		Faculty faculty = new Faculty(0, "Sukhman", "ashu@gam.com",234,"AP");
+//		LibStudent student = new LibStudent(0, "Pranjali", "yash@gma.com",999,"CSE");
+//		Member member = new Member(0,"Sanskar", "san@g.c");
+//		em.persist(member);
+//		em.persist(student);
+//		em.persist(faculty);
+		
+//		Person p1 =new Person(0, "Ekta");
+//		em.persist(p1);
+//		Consumer cons = new Consumer(0, "Dhruv", "Gurugram", 4.5);
+//		em.persist(cons);
+//		EmployeeInh emp = new EmployeeInh(0, "Alik", 123,"SD");
+//		em.persist(emp);
 		
 		em.getTransaction().commit();
+//		Query query = em.createQuery("select m from Person m");
+		Query query = em.createQuery("select s from Person s");
+		List list = query.getResultList();
+		list.forEach(logger::trace);
 	}
 	
 }
